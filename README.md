@@ -2,12 +2,13 @@
 MicroPython script to display the air temperature, humidity and pressure on the OLED screen using Raspberry Pi Pico microcontroller.
 
 ## Detailed description
-Schematic of the connections can be found in the connections.pdf file. OLED screen with SH1106 driver was used. It will not work if screen has different driver chip. Documentation on how to use MicroPython on the Raspberry Pi Pico can be found [here](https://datasheets.raspberrypi.org/pico/raspberry-pi-pico-python-sdk.pdf).
+Schematic of the connections can be found in the connections.pdf file. OLED screen with SH1106 driver was used. It will not work if screen has different driver chip. Documentation on how to use MicroPython on the Raspberry Pi Pico can be found [here](https://datasheets.raspberrypi.org/pico/raspberry-pi-pico-python-sdk.pdf){:target="_blank"}.
 
 ## Dependencies
 You need two libraries to run this script:
 
-[SH1106](https://github.com/robert-hh/SH1106)
-[BME280](https://github.com/catdog2/mpy_bme280_esp8266)
+[SH1106](https://github.com/robert-hh/SH1106){:target="_blank"}
+
+[BME280](https://github.com/catdog2/mpy_bme280_esp8266){:target="_blank"}
 
 sh1106.py and bme280.py files should be copied into the /lib directory crated in the main directory of the microcontroller.

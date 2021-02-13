@@ -1,4 +1,3 @@
- # Display Image & text on I2C driven SH1106 OLED display 
 from machine import I2C, ADC, Pin
 from sh1106 import SH1106_I2C
 from bme280 import BME280
@@ -7,12 +6,7 @@ from time import sleep
 WIDTH  = 128                                            # oled display width
 HEIGHT = 64                                             # oled display height
 
-i2c = I2C(1, scl=Pin(15), sda=Pin(14))                  # Init I2C using I2C1, SCL=Pin(GP15), SDA=Pin(GP14), freq=400000
-print("I2C Address      : "+hex(i2c.scan()[0]).upper()) # Display device address
-print("I2C Address      : "+hex(i2c.scan()[1]).upper()) # Display device address
-print("I2C Configuration: "+str(i2c))                   # Display I2C config
-
-oled = SH1106_I2C(WIDTH, HEIGHT, i2c)                   # Init oled display
+oled = SH1106_I2C(WIDTH, HEIGHT, i2c)                   # Init OLED display
 oled.rotate(True)
 
 bme = BME280(i2c = i2c)                                 # Init BME280 sensor
