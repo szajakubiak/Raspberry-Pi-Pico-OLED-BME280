@@ -13,4 +13,4 @@ You need two libraries to run this script:
 
 [BME280](https://github.com/catdog2/mpy_bme280_esp8266)
 
-sh1106.py and bme280.py files should be copied into the /lib directory crated in the main directory of the microcontroller.
+sh1106.py and bme280.py files should be copied into the /lib directory created in the main directory of the microcontroller.
